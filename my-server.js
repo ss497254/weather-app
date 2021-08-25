@@ -17,8 +17,7 @@ app.use(express.static(localpath))
 app.get('',(req,res)=>{
     res.render('home-page',
     {
-        title:"Dynamic templating",
-        head:'App',
+        title:"Weather App",
         name:"Saurabh Singh"
     })
 })
@@ -37,7 +36,7 @@ app.get('/help',(req,res)=>{
     res.render('help',
     {
         title:"Help",
-        head:'This is some helpful text',
+        content:'Use google to find any help. Don\'t ask me',
         name:"Saurabh Singh"
     })
 })
@@ -45,14 +44,13 @@ app.get('/help/*', (req, res) => {
     res.render('404', {
         title: 'Error-404',
         name: 'Saurabh Singh',
-        errorMessage: 'Help article not found.'
+        content:"Help article not found.",
     })
 })
 app.get('/about',(req,res)=>{
     res.render('about',
     {
-        title:"about",
-        head:'Know about me',
+        title:"About",
         name:"Saurabh Singh"
     })
 })
@@ -60,7 +58,7 @@ app.get('*',(req,res)=>{
     res.render('error',
     {
         title:"Error-404",
-        head:'Page not available. Try another page',
+        content:'Page not available. Try another page',
         name:"Saurabh Singh"
     })
 })

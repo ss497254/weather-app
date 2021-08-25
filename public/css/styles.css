@@ -6,8 +6,8 @@
 }
 body{
     display: flex;
+    background-color: rgb(222, 241, 222);
     flex-direction: column;
-    min-height: calc(100vh - 3rem)
 }
 a{
     text-decoration: none;
@@ -21,7 +21,6 @@ a{
     display: flex;
     font-size: 1.2rem;
     padding: 0 2rem;
-    /* border-bottom: 0.3rem solid black; */
 }
 .logo{
     flex-grow: 1;
@@ -29,12 +28,11 @@ a{
     display: flex;
 }
 .logo > img{
-    width: 40px;
+    width: 35px;
     border-radius: 25%;
     margin:0 1% 0 5%;
 }
 .header > *{
-    /* font-weight: 8010; */
     display: flex;
     align-items: center;
     color: #fff;
@@ -47,23 +45,26 @@ a{
     background: rgb(241, 241, 241);
 }
 .content{
-    background-color: rgb(180, 211, 180);
-    flex-grow: 1;                 
-    margin: 0 15%;
-    padding: 5rem 5% 0%;
-    box-shadow: 0 0 15rem 0 rgb(180, 211, 180);
-}
-.content > h3{
+    min-height: calc(100vh - 7rem);
+    padding: 5% 15% 0 15%;
     font-size: 2rem;
+    text-align: center;
+}
+.content > h2{
+    font-size: 2rem;
+}
+.content > h1{
+    text-align: center;
+    font-size: 50px;
 }
 .content > p{
     padding: 1%;
 }
-
 .content > form{
     display: flex;
     font-size: 2rem;
     border: 0.5px solid black;
+    margin: 0 15%;
 }
 .content > form > input{
     flex-basis: 80%;
@@ -75,37 +76,43 @@ a{
     background-color: #fff !important;
 }
 .content > form > button{
+    color: #fff;
     flex-basis: 20%;
     height: 3rem;
     border: 0px;
     border-left: 1px solid black;
     border-radius: 0%;
-    background-color: #f1f1f1;
+    background-color: #7952b3;
 }
 .content > form > button:hover{
-    background-color: rgb(255, 45, 203);
+    background-color: rgb(45, 94, 255);
     color: #fff;
-    /* border: 2.5px solid red; */
 }
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 3rem;
     display: flex;
     align-items: center;
     background: #7952b3;
-    place-content: center;
     color: #fff;
+    place-content: center;
+}
+.footer > a{
+    height: 2rem;
+    width: 4rem;
+}
+.footer > a > img{
+    height: 2rem;
+    border-radius: 25%;
 }
 .show{
     display: flex;
+    margin: 0 15%;
     flex-direction: column;
 }
 .show > .row{
+    text-align: left !important;
     height: 2.5rem;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     border: 1px solid black;
     margin: 2px 0;
     padding: 0.5rem 5%;
@@ -119,7 +126,7 @@ a{
         font-size: 12px;
     }
     .header{
-        padding: 0;
+        height: 4rem !important;
     }
     .logo > img{
         width: 25px;
@@ -130,6 +137,12 @@ a{
         padding:0 2rem;
         font-size: 1.2rem;
     }
+    .content > form{
+        margin: 0 5%;
+    }
+    .show{
+        margin: 0 5%;
+    }
 }
 @media (max-width:500px){
     *{
@@ -137,10 +150,16 @@ a{
     }
     .content{
         margin: 0;
-        padding: 10rem 10% 0;
+        padding: 10% 15% 0 15%;
     }
     .header > a{
         padding:0 1rem;
         font-size: 1.2rem;
+    }
+    .content > form{
+        margin: 0%;
+    }
+    .show{
+        margin: 0%;
     }
 }

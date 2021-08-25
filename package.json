@@ -4,7 +4,7 @@
   "description": "",
   "main": "my-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node my-server.js"
   },
   "author": "",
   "license": "ISC",

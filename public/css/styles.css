@@ -1,0 +1,142 @@
+*{
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 14px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+a{
+    text-decoration: none;
+}
+.header {       
+    position: relative;
+    z-index: 1;         
+    height: 4rem;
+    width: 100%;
+    background: #7952b3;
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+    /* border-bottom: 0.3rem solid black; */
+}
+.logo{
+    flex-grow: 1;
+    font-size: 1.4rem;
+    display: flex;
+}
+.logo > img{
+    width: 40px;
+    border-radius: 25%;
+    margin:0 1% 0 5%;
+}
+.header > *{
+    /* font-weight: 8010; */
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.header > a{
+    padding:0 3rem;
+}
+.header > a:hover{
+    color: #000;
+    background: rgb(241, 241, 241);
+}
+.content{
+    background-color: rgb(180, 211, 180);
+    flex-grow: 1;                 
+    margin: 0 15%;
+    padding: 5rem 5% 0%;
+    box-shadow: 0 0 15rem 0 rgb(180, 211, 180);
+}
+.content > h3{
+    font-size: 2rem;
+}
+.content > p{
+    padding: 1%;
+}
+
+.content > form{
+    display: flex;
+    font-size: 2rem;
+    border: 0.5px solid black;
+}
+.content > form > input{
+    flex-basis: 80%;
+    height: 3rem;
+    padding: 1%;
+    border: 1px;
+    border-radius: 2%;
+    outline: none;
+    background-color: #fff !important;
+}
+.content > form > button{
+    flex-basis: 20%;
+    height: 3rem;
+    border: 0px;
+    border-left: 1px solid black;
+    border-radius: 0%;
+    background-color: #f1f1f1;
+}
+.content > form > button:hover{
+    background-color: rgb(255, 45, 203);
+    color: #fff;
+    /* border: 2.5px solid red; */
+}
+.footer {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background: #7952b3;
+    place-content: center;
+    color: #fff;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+}
+.show > .row{
+    height: 2.5rem;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin: 2px 0;
+    padding: 0.5rem 5%;
+}
+.show > .row > span{
+    color: red;
+}
+@media (max-width:700px)
+{
+    *{
+        font-size: 12px;
+    }
+    .header{
+        padding: 0;
+    }
+    .logo > img{
+        width: 25px;
+        border-radius: 25%;
+        padding: 0;
+    }
+    .header > a{
+        padding:0 2rem;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:500px){
+    *{
+        font-size: 10px;
+    }
+    .content{
+        margin: 0;
+        padding: 10rem 10% 0;
+    }
+    .header > a{
+        padding:0 1rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{>link}}
+    <title>{{title}}</title>
+</head>
+<body>
+    {{>header}}
+    <div class="content">
+        <h3 style="text-align:center">Use this site to get your weather!</h3>
+        <br>
+        <form>
+            <input placeholder="Location" id="input">
+            <button>Search</button>
+        </form>
+        <p id="message-0"></p>
+        <div class="show">
+            <div class="row">
+                Location:&nbsp;<span id="message-8"></span>
+            </div>
+            <div class="row">
+                Observation Time:&nbsp;<span id="message-1"></span>
+            </div>
+            <div class="row">
+                Temperature:&nbsp;<span id="message-2"></span>
+            </div>
+            <div class="row">
+                Weather description:&nbsp;<span id="message-3"></span>
+            </div>
+            <div class="row">
+                Precipitation:&nbsp;<span id="message-4"></span>
+            </div>
+            <div class="row">
+                Wind Speed:&nbsp;<span id="message-5"></span>
+            </div>
+            <div class="row">
+                Humidity:&nbsp;<span id="message-6"></span>
+            </div>
+            <div class="row">
+                Visibility:&nbsp;<span id="message-7"></span>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>

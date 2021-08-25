@@ -7,7 +7,7 @@
 body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: calc(100vh - 3rem)
 }
 a{
     text-decoration: none;
@@ -88,6 +88,10 @@ a{
     /* border: 2.5px solid red; */
 }
 .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 3rem;
     display: flex;
     align-items: center;

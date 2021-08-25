@@ -69,7 +69,7 @@ a{
 .content > form > input{
     flex-basis: 80%;
     height: 3rem;
-    padding: 1%;
+    padding: 0 5%;
     border: 1px;
     border-radius: 2%;
     outline: none;
